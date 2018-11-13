@@ -142,7 +142,7 @@ public class ThemeableBrowser extends CordovaPlugin {
                          */
                         Boolean shouldAllowNavigation = null;
                         if (url.startsWith("javascript:")) {
-                            shouldAllowNavigation = true;
+                            shouldAllowNavigation = false;
                         }
                         if (shouldAllowNavigation == null) {
                             shouldAllowNavigation = new Whitelist().isUrlWhiteListed(url);
